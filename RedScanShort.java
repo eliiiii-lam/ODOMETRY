@@ -313,7 +313,7 @@ public class RedScanShort extends LinearOpMode {
                     break;
                 case RIGHT:
                     Trajectory traj1R = drive.trajectoryBuilder(new Pose2d(0,0,Math.toRadians(0)))
-                            .lineToLinearHeading(new Pose2d(-25,-2.5,Math.toRadians(270)))
+                            .lineToLinearHeading(new Pose2d(-25,-2.1,Math.toRadians(270)))
                             .build();
                     Trajectory trajheheheha = drive.trajectoryBuilder(traj1R.end())
                             .forward(12)
@@ -322,10 +322,10 @@ public class RedScanShort extends LinearOpMode {
                             .lineToLinearHeading(new Pose2d(-52,0,Math.toRadians(90)))
                             .build();
                     Trajectory traj3R = drive.trajectoryBuilder(traj2R.end())
-                            .forward(84.5)
+                            .forward(83)
                             .build();
                     Trajectory traj4R = drive.trajectoryBuilder(traj3R.end())
-                                    .strafeRight(33.5)
+                                    .strafeRight(35)
                                             .build();
                     drive.followTrajectory(traj1R);
                     wrist.setPosition(0.19);
